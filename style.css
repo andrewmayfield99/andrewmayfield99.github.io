@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif; /*Sets all text to Arial, then sans-serif if arial not supported*/
+    margin: 0; /*Removes margin*/
+    padding: 0; /*Removes padding*/
+    background-color: lightgrey;
+}
+
+header {
+    background-color: #333; /*Dark Grey*/
+    color: white;
+    padding: .5rem 0; /*1rem makes the padding 1 times the size of the header font*/
+    text-align: center;
+    position: sticky; /*Sticks to position when scrolling*/
+    top: 0px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /*Displays text in a horizontal line*/
+    margin: 0 15px; /*Distance between tags in header*/
+}
+
+nav ul li a { 
+    color: white; 
+    text-decoration: none; /*Removes underline*/
+}
+
+section { /*All Sections except contact me*/
+    padding: 2rem; /*Adds padding to all sections by 2 times text*/
+    background-color: white; /*Box color*/
+    margin: 1rem 5%; /*Adds margin size 1 times text |5% of site size from the side*/
+    box-shadow: 5px 5px 10px grey;
+}
+
+section h2 {
+    margin-top: 0; /*Removes margin about box text headers*/
+}
+
+form { /*Contant Me Section*/
+    display: flex; /*Aligns text in column style for Contact me section*/
+    flex-direction: column; /*Assigns column style*/
+}
+
+form label {
+    margin-top: 1rem; /*Spaces terms by 1 times text size*/
+}
+
+form input, form textarea {
+    padding: 0.5rem; /*Spaces Text boxs*/
+    margin-top: 0.5rem; /*Spaces area between text and boxes*/
+    border: 1px solid grey; /*Sets color of text box border*/
+    border-radius: 5px; /*Curves text b0x corners*/
+}
+
+form button { /*Send Button*/
+    margin-top: 2rem; /*Space between button and box above*/
+    padding: .5rem; /*Size of button*/
+    border: none;
+    border-radius: 5px; /*Curves button corners*/
+    background-color: #333; /*Sets color of button*/
+    color: white; /*Text Color*/
+    cursor: pointer; /*Shows clicker cursor when hovered*/
+}
+
+#sendEmail{
+    margin-top: 0; /*Space between button and box above*/
+    padding: .5rem; /*Size of button*/
+    border: none;
+    border-radius: 5px; /*Curves button corners*/
+    background-color: #333; /*Sets color of button*/
+    color: white; /*Text Color*/
+    cursor: pointer; /*Shows clicker cursor when hovered*/
+}
+
+#resumeButton:hover{
+    text-decoration: underline;
+}

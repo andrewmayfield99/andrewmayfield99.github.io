@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Mayfield Personal Website</title>
+    <link rel="stylesheet" href="style.css"> <!--Connects to CSS code page-->
+    <meta name="description" content="Andrew Mayfield Personal Website">
+    <meta name="keywords" content="Andrew, Job, Work, Personal, Website">
+    <meta name="author" content="Andrew Mayfield">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales Website for device-->
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <h1>Andrew Mayfield</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home"> <!--Home Section-->
+        <h2>Home</h2>
+        <p>Home Description</p>
+    </section>
+    <section id="about"> <!--About Me Section-->
+        <h2>About Me</h2>
+        <p>About Me Description</p>
+    </section>
+    <section id="resume"> <!--Resume Section-->
+        <h2 id="resumeButton"><a href="https://docs.google.com/document/d/1mXyt5Ji2ZsvM05OLMUomxh2g-JaJdWJ4/edit?usp=sharing&ouid=107260405751978278395&rtpof=true&sd=true" target=_blank title="Andrew Mayfield Resume Google Document" style="color: black; text-decoration: none;">Resume</a></h2>
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ul>
+    </section>
+    <section id="contact"> <!--Contact Me Section-->
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <h1>Or click below to directly send me an email</h1>
+        <button id="sendEmail"><a href="mailto:gam9718@nyu.edu" target=_blank title="This will send an email to me" style="color: white; text-decoration: none; ">Send Email</a></button>
+    </section>
+    <script src="script.js"></script> <!--Connects to JavaScript code page-->
+</body>
+</html>
